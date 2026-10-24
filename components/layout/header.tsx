@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 export function Header() {
 
   return (
-    <header className="bg-linen border-border bg-background sticky top-0 z-40 border-b">
+    <header className="sticky w-full top-0 z-40">
       {/* 3 equal-weight columns on desktop keeps the nav truly centred */}
       <div className="container-page grid h-18 grid-cols-[1fr_auto] items-center md:grid-cols-[1fr_auto_1fr]">
         <Link

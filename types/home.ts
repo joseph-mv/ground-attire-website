@@ -5,10 +5,10 @@ export type TextSegment = {
   
   export type HomeContent = {
     hero: {
-      image: {
+      images: {
         src: string;
         alt: string;
-      };
+      }[];
     };
     intro: {
       eyebrow: string;

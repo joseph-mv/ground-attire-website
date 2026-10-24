@@ -5,10 +5,14 @@ import { HomeContent } from "@/types/home";
 
 const homeContent: HomeContent = {
   hero: {
-    image: {
-      src: "/images/home/hero.png",
-      alt: "Hero image",
-    },
+    images: [
+      { src: "/images/home/hero1.jpeg", alt: "Hero image 1" },
+      { src: "/images/home/hero2.jpeg", alt: "Hero image 2" },
+      { src: "/images/home/hero3.jpeg", alt: "Hero image 3" },
+      { src: "/images/home/hero4.jpeg", alt: "Hero image 4" },
+      { src: "/images/home/hero5.jpeg", alt: "Hero image 5" },
+      { src: "/images/home/hero6.png", alt: "Hero image 6" },
+    ],
   },
   intro: {
     eyebrow: "An architecture studio",

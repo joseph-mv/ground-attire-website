@@ -14,6 +14,7 @@ export const siteConfig = {
       { label:"Services", href: "/services" },
       { label: "Journal", href: "/journal" },
       { label: "Contact", href: "/contact" },
+      { label: "Client", href: "/client" },
     ],
   } as const;
   
