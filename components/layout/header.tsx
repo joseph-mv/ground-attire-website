@@ -13,7 +13,7 @@ export function Header() {
       <div className="container-page grid h-18 grid-cols-[1fr_auto] items-center md:grid-cols-[1fr_auto_1fr]">
         <Link
           href="/"
-          className="type-label text-foreground flex w-fit items-center gap-3 font-medium"
+          className="type-label text-foreground flex w-fit items-center gap-3"
         >
           <Image
             src="/images/home/logo.png"
