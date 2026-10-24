@@ -19,7 +19,7 @@
   color-scheme: light;
 
   /* ---- A. Brand palette (from the design spec) ------------------------- */
-  --ga-sand: #e5ded4; /* primary background */
+  --ga-sand: #fafafa; /* primary background */
   --ga-ink: #211f1b; /* primary text */
   --ga-clay: #8d7f74; /* secondary text */
   --ga-umber: #686254; /* accent / CTA / dark section */
