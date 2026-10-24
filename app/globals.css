@@ -236,6 +236,14 @@
   --text-label--letter-spacing: 0.16em;
 
   --tracking-label: 0.16em;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  --animate-marquee: marquee 48s linear infinite;
 }
 
 /* ==========================================================================

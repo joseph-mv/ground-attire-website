@@ -46,7 +46,7 @@ export function SelectedWorkTile({
             alt={project.image.alt}
             fill
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-            sizes="(min-width: 64rem) 50vw, 100vw"
+            sizes="(min-width: 64rem) 32rem, (min-width: 48rem) 26rem, 78vw"
           />
         </div>
         <div className="mt-4 md:mt-5">

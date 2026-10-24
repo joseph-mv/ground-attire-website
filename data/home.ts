@@ -34,7 +34,7 @@ const homeContent: HomeContent = {
       "At Ground Attire, we see architecture as an attire for the ground — carefully shaped, tailored to its surroundings and designed to reveal what already exists.",
     ],
     image: {
-      src: "/images/home/idea.png",
+      src: "/images/home/hero6.png",
       alt: "Landscape and terrain at the scale of architecture",
     },
   },
