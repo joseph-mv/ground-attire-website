@@ -4,6 +4,7 @@ import { Idea } from "@/components/sections/idea";
 import { Intro } from "@/components/sections/intro";
 import { Journal } from "@/components/sections/journal";
 import { SelectedWork } from "@/components/sections/selected-work";
+import { WhoWeAre } from "@/components/sections/who-we-are";
 
 export default function HomePage() {
   return (
@@ -12,7 +13,8 @@ export default function HomePage() {
       <Intro />
       <Idea />
       {/* <Approach /> */}
-      {/* <SelectedWork /> */}
+      <SelectedWork />
+      <WhoWeAre />
       {/* <Journal /> */}
     </>
   );

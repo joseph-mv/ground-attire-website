@@ -320,6 +320,20 @@
    4. UTILITIES
    ========================================================================== */
 
+@keyframes swap {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Stepped selected-work track — vars must resolve on the animated element */
+@utility animate-swap {
+  animation-name: swap;
+  animation-duration: calc(var(--swap-steps, 1) * 1.5s);
+  animation-timing-function: var(--swap-ease, linear);
+  animation-iteration-count: infinite;
+}
+
 /* Page wrapper: max 1440px, responsive side padding */
 @utility container-page {
   width: 100%;
