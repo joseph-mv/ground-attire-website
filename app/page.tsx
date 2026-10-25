@@ -11,9 +11,9 @@ export default function HomePage() {
       <Hero />
       <Intro />
       <Idea />
-      <Approach />
-      <SelectedWork />
-      <Journal />
+      {/* <Approach /> */}
+      {/* <SelectedWork /> */}
+      {/* <Journal /> */}
     </>
   );
 }

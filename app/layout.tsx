@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Newsreader } from "next/font/google";
 import localFont from "next/font/local";
 
 import { Header } from "@/components/layout/header";
@@ -7,9 +8,17 @@ import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 /*
- * Century Gothic: Regular (400) for display/headings, Bold (700) for body/labels.
- * Replace files in public/fonts to swap cuts; roles are mapped in globals.css.
+ * Newsreader for display/headings; Century Gothic for body, nav, and labels.
+ * Roles are mapped in globals.css.
  */
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  axes: ["opsz"],
+  variable: "--font-newsreader-family",
+  display: "swap",
+});
+
 const centuryGothic = localFont({
   src: [
     {
@@ -71,7 +80,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={centuryGothic.variable}>
+    <html lang="en" className={`${newsreader.variable} ${centuryGothic.variable}`}>
       <body className="flex min-h-dvh flex-col">
         <script
           type="application/ld+json"
