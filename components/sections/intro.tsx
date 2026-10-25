@@ -8,7 +8,12 @@ export function Intro() {
   const { intro } = getHomeContent();
 
   return (
-    <section aria-labelledby="intro-statement" className="py-section">
+    <section aria-labelledby="intro-statement" className="relative py-section">
+      <div
+        id="home-intro-sentinel"
+        aria-hidden
+        className="pointer-events-none absolute top-0 h-px w-full"
+      />
       <div className="container-page grid-layout">
         <div className="col-span-4 flex flex-col items-center text-center md:col-span-4 md:col-start-2 lg:col-span-6 lg:col-start-4">
           <p className="type-label text-muted-foreground">{intro.eyebrow}</p>
