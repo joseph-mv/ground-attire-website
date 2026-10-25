@@ -38,6 +38,25 @@ const homeContent: HomeContent = {
       alt: "Landscape and terrain at the scale of architecture",
     },
   },
+  whoWeAre: {
+    eyebrow: "04 — Who we are",
+    quote:
+      "A building should never feel borrowed from somewhere else. Like a good tailor, we begin with the measurements: the slope, the soil, the light, the neighbours. Then we design the attire the ground was waiting for.",
+    quoteAttribution: "says Sinan",
+    paragraphs: [
+     "Ar. Sinan Muhammed founded Ground Attire in 2023, an architecture practice in Kozhikode, Kerala, working across Architecture, Interiors, Landscape, Art and Events. Every site is measured first, then customised, so no two get the same outfit. Some call for restraint, some for drama, some for a quiet alteration of what already stands. We work with like-minded people to create spaces that sit comfortably on the land."],
+    signOff: "Attire to the ground.",
+    stats: [
+      { value: "12", label: "Years" },
+      { value: "48", label: "Projects" },
+      { value: "6", label: "Awards" },
+    ],
+    teamLink: { label: "Meet the team →", href: "/studio" },
+    image: {
+      src: "/images/home/whoweare.jpeg",
+      alt: "Ground Attire studio team seated in a garden",
+    },
+  },
 };
 
 export default homeContent;

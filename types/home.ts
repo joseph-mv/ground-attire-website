@@ -24,4 +24,17 @@ export type TextSegment = {
         alt: string;
       };
     };
+    whoWeAre: {
+      eyebrow: string;
+      quote: string;
+      quoteAttribution: string;
+      paragraphs: string[];
+      signOff: string;
+      stats: { value: string; label: string }[];
+      teamLink: { label: string; href: string };
+      image: {
+        src: string;
+        alt: string;
+      };
+    };
   };
