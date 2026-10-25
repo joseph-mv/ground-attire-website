@@ -69,7 +69,7 @@ export function Header() {
       >
         <Link
           href="/"
-          className="type-label text-foreground flex w-fit items-center gap-3 font-medium"
+          className="type-label text-foreground flex w-fit items-center gap-3"
         >
           <Image
             src="/images/home/logo.png"

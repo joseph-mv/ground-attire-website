@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import localFont from "next/font/local";
 
 import { Header } from "@/components/layout/header";
 import { siteConfig } from "@/config/site";
@@ -7,21 +7,23 @@ import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 /*
- * Serif for display + headings, sans for body + captions.
- * The CSS variables are mapped to font roles in globals.css (@theme),
- * so swapping a typeface only touches this file and one line there.
+ * Century Gothic: Regular (400) for display/headings, Bold (700) for body/labels.
+ * Replace files in public/fonts to swap cuts; roles are mapped in globals.css.
  */
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz"], // optical sizing: refined at display sizes, sturdy at text sizes
-  variable: "--font-newsreader",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+const centuryGothic = localFont({
+  src: [
+    {
+      path: "../public/fonts/CenturyGothicPaneuropeanRegular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/CenturyGothicPaneuropeanBold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-century-gothic",
   display: "swap",
 });
 
@@ -69,7 +71,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${newsreader.variable} ${inter.variable}`}>
+    <html lang="en" className={centuryGothic.variable}>
       <body className="flex min-h-dvh flex-col">
         <script
           type="application/ld+json"

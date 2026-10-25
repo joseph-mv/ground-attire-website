@@ -6,7 +6,7 @@ export default async function ProjectsPage() {
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-10">
-      <h1 className="mb-6 text-3xl font-semibold tracking-tight">Projects</h1>
+      <h1 className="mb-6 text-3xl tracking-tight">Projects</h1>
       <ul className="space-y-3">
         {projects.map((project) => (
           <li key={project.slug}>
