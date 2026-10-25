@@ -7,23 +7,23 @@ import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 /*
- * Nexa: Extra Light (200) for display/headings, Heavy (800) for body/labels.
+ * Century Gothic: Regular (400) for display/headings, Bold (700) for body/labels.
  * Replace files in public/fonts to swap cuts; roles are mapped in globals.css.
  */
-const nexa = localFont({
+const centuryGothic = localFont({
   src: [
     {
-      path: "../public/fonts/Nexa-ExtraLight.ttf",
-      weight: "200",
+      path: "../public/fonts/CenturyGothicPaneuropeanRegular.ttf",
+      weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/Nexa-Heavy.ttf",
-      weight: "800",
+      path: "../public/fonts/CenturyGothicPaneuropeanBold.ttf",
+      weight: "700",
       style: "normal",
     },
   ],
-  variable: "--font-nexa",
+  variable: "--font-century-gothic",
   display: "swap",
 });
 
@@ -71,7 +71,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={nexa.variable}>
+    <html lang="en" className={centuryGothic.variable}>
       <body className="flex min-h-dvh flex-col">
         <script
           type="application/ld+json"

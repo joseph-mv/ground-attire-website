@@ -38,7 +38,7 @@ export function MobileNav({ items }: MobileNavProps) {
                 <NavLink
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="font-heading text-h3 font-heavy! text-foreground/75 data-active:text-foreground block py-4"
+                  className="font-heading text-h3 text-foreground/75 data-active:text-foreground block py-4"
                 >
                   {item.label}
                 </NavLink>
