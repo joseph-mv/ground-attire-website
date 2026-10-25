@@ -102,7 +102,7 @@
  *   <footer class="surface-dark">…</footer>
  */
 .surface-dark {
-  --background: var(--ga-umber);
+  --background: var(--ga-ink);
   --foreground: var(--ga-linen);
   --card: #5e5949;
   --card-foreground: var(--ga-linen);

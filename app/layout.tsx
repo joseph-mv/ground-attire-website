@@ -6,6 +6,7 @@ import { Header } from "@/components/layout/header";
 import { siteConfig } from "@/config/site";
 
 import "./globals.css";
+import Footer from "@/components/layout/footer";
 
 /*
  * Newsreader for display/headings; Century Gothic for body, nav, and labels.
@@ -103,7 +104,7 @@ export default function RootLayout({
           {children}
         </main>
 
-        {/* <Footer />  → components/layout/footer.tsx (wrap in .surface-dark) */}
+        <Footer />
       </body>
     </html>
   );
